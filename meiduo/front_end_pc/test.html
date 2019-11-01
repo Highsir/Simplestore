@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+
+    <script type="text/javascript" src="js/axios-0.18.0.min.js"></script>
+    <script type="text/javascript">
+
+        // 请求服务器数据
+        axios.get('http://127.0.0.1:8000/test2/')
+            .then(response => {
+              alert(response.data.message)
+            })
+            .catch(error => {
+                alert(error.response.status)
+            })
+
+    </script>
+
+</head>
+<body>
+
+<h3>测试</h3>
+
+</body>
+</html>
